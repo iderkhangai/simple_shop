@@ -6,11 +6,11 @@
 			<input type="email" name="email" required="" class="form-control">
 		</div>
 		<div class="form-group">
-			<label for="" class="control-label">Password</label>
+			<label for="" class="control-label">Нууц үг</label>
 			<input type="password" name="password" required="" class="form-control">
-			<small><a href="javascript:void(0)" class="text-dark" id="new_account">Create New Account</a></small>
+			<small><a href="javascript:void(0)" class="text-dark" id="new_account">Шинээр нээх</a></small>
 		</div>
-		<button class="button btn btn-dark btn-sm">Login</button>
+		<button class="button btn btn-dark btn-sm">Нэвтрэх</button>
 	</form>
 </div>
 
@@ -22,7 +22,7 @@
 
 <script>
 	$('#new_account').click(function(){
-		uni_modal("Create an Account",'signup.php?redirect=index.php?page=checkout')
+		uni_modal("Бүртгүүлэх цонх",'signup.php?redirect=index.php?page=checkout')
 	})
 	$('#login-frm').submit(function(e){
 		e.preventDefault()

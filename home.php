@@ -3,9 +3,10 @@
      <div class="container h-100">
          <div class="row h-100 align-items-center justify-content-center text-center">
              <div class="col-lg-10 align-self-center mb-4 page-title">
-                 <h1 class="text-white">Тайвтай морил <?php echo $_SESSION['setting_name']; ?></h1>
+                 <h1 class="text-white">Тавтай морилно уу</h1>
+                 <small class="text-white"><?php echo $_SESSION['setting_name']; ?></small>
                  <hr class="divider my-4 bg-dark" />
-                 <a class="btn btn-dark bg-black btn-xl js-scroll-trigger" href="#menu">Захиалах</a>
+                 <a class="btn btn-primary bg-black btn-xl js-scroll-trigger" href="#menu"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Одоо Захиалах</a>
 
              </div>
 
@@ -13,7 +14,7 @@
      </div>
  </header>
  <section class="page-section" id="menu">
-     <h1 class="text-center text-cursive" style="font-size:3em"><b>Ангилал</b></h1>
+     <h1 class="text-center text-cursive" style="font-size:3em"><b>Барилгын материал</b></h1>
      <div class="d-flex justify-content-center">
          <hr class="border-dark" width="5%">
      </div>

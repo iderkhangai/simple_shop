@@ -117,11 +117,11 @@
 			<div class="card rounded-0 shadow">
 				<div class="card-body">
 					<div class="container-fluid">
-						<h5 class="tex-muted">Нийт Захиалга</h5>
+						<h5 class="tex-muted"><span class="fa fa-tools"></span> Нийт Бараа</h5>
 						<?php
 						$menu_a = $conn->query("SELECT * FROM `product_list` where `status` = 1")->num_rows;
 						?>
-						<h2 class="text-right"><b><?= number_format($menu_a) ?></b></h2>
+						<h2 class="text-right"><a href="index.php?page=menu"><b><?= number_format($menu_a) ?></b></a></h2>
 					</div>
 				</div>
 			</div>
@@ -131,11 +131,11 @@
 			<div class="card rounded-0 shadow">
 				<div class="card-body">
 					<div class="container-fluid">
-						<h5 class="tex-muted">Нийт идэвхгүй Ангилал</h5>
+						<h5 class="tex-muted"><i class="fa fa-minus-circle" aria-hidden="true"></i> Дууссан бараа</h5>
 						<?php
 						$menu_i = $conn->query("SELECT * FROM `product_list` where `status` = 0")->num_rows;
 						?>
-						<h2 class="text-right"><b><?= number_format($menu_i) ?></b></h2>
+						<h2 class="text-right"><a href="index.php?page=menu"><b><?= number_format($menu_i) ?></b></a></h2>
 					</div>
 				</div>
 			</div>
@@ -145,11 +145,11 @@
 			<div class="card rounded-0 shadow">
 				<div class="card-body">
 					<div class="container-fluid">
-						<h5 class="tex-muted">Шинэ захиалга</h5>
+						<h5 class="tex-muted"><i class="fa fa-plus" aria-hidden="true"></i> Шинэ захиалга</h5>
 						<?php
 						$o_fv = $conn->query("SELECT * FROM `orders` where `status` = 0")->num_rows;
 						?>
-						<h2 class="text-right"><b><?= number_format($o_fv) ?></b></h2>
+						<h2 class="text-right"><a href="index.php?page=menu"><b><?= number_format($o_fv) ?></b></a></h2>
 					</div>
 				</div>
 			</div>
@@ -159,11 +159,11 @@
 			<div class="card rounded-0 shadow">
 				<div class="card-body">
 					<div class="container-fluid">
-						<h5 class="tex-muted">Биелсэн захиалга</h5>
+						<h5 class="tex-muted"><i class="fa fa-check-square" aria-hidden="true"></i> Биелсэн захиалга</h5>
 						<?php
 						$o_c = $conn->query("SELECT * FROM `orders` where `status` = 1")->num_rows;
 						?>
-						<h2 class="text-right"><b><?= number_format($o_c) ?></b></h2>
+						<h2 class="text-right"><a href="index.php?page=orders"><b><?= number_format($o_c) ?></b></a></h2>
 					</div>
 				</div>
 			</div>
@@ -173,7 +173,7 @@
 
 	<div class="row m-3">
 		<div class="col-lg-12" id="img-holder">
-			<img src="./../assets/img/<?= $_SESSION['setting_cover_img'] ?>" alt="Pizza Oredering System - BG" class="img-fluid">
+			<img src="./../assets/img/<?= $_SESSION['setting_cover_img'] ?>" alt="Barilga ordering system" class="img-fluid">
 		</div>
 	</div>
 

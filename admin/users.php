@@ -6,6 +6,7 @@
 
 	<div class="row">
 		<div class="col-lg-12">
+			<h3>Хэрэглэгч удирдах</h3> 
 			<button class="btn btn-primary float-right btn-sm" id="new_user"><i class="fa fa-plus"></i> Нэмэх</button>
 		</div>
 	</div>
@@ -67,10 +68,13 @@
 </div>
 <script>
 	$('#new_user').click(function() {
-		uni_modal('New User', 'manage_user.php')
+		uni_modal('Хэрэглэгч нэмэх', 'manage_user.php')
 	})
 	$('.edit_user').click(function() {
-		uni_modal('Edit User', 'manage_user.php?id=' + $(this).attr('data-id'))
+		uni_modal('Засах', 'manage_user.php?id=' + $(this).attr('data-id'))
 	})
+	// $('.delete_user').click(function() {
+	// 	uni_modal('Устгах', 'delete_user.php?id=' + $(this).attr('data-id'))
+	// })
 	$('table').dataTable()
 </script>

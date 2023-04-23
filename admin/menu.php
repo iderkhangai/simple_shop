@@ -171,13 +171,13 @@
 			type: 'POST',
 			success: function(resp) {
 				if (resp == 1) {
-					alert_toast("Data successfully added", 'success')
+					alert_toast("Амжилттай нэмэгдлээ", 'success')
 					setTimeout(function() {
 						location.reload()
 					}, 1500)
 
 				} else if (resp == 2) {
-					alert_toast("Data successfully updated", 'success')
+					alert_toast("Амжилттай засагдлаа", 'success')
 					setTimeout(function() {
 						location.reload()
 					}, 1500)
@@ -204,7 +204,7 @@
 		end_load()
 	})
 	$('.delete_menu').click(function() {
-		_conf("Are you sure to delete this menu?", "delete_menu", [$(this).attr('data-id')])
+		_conf("Энэ барааг устгах уу?", "delete_menu", [$(this).attr('data-id')])
 	})
 
 	function delete_menu($id) {
@@ -217,7 +217,7 @@
 			},
 			success: function(resp) {
 				if (resp == 1) {
-					alert_toast("Data successfully deleted", 'success')
+					alert_toast("Амжилттай устгагдлаа!", 'success')
 					setTimeout(function() {
 						location.reload()
 					}, 1500)

@@ -3,14 +3,14 @@ include 'admin/db_connect.php';
 // var_dump($_SESSION);
 $chk = $conn->query("SELECT * FROM cart where user_id = {$_SESSION['login_user_id']} ")->num_rows;
 if($chk <= 0){
-    echo "<script>alert('You don\'t have an Item in your cart yet.'); location.replace('./')</script>";
+    echo "<script>alert('Таны сагс хоосон байна, Бараа нэмнэ үү!'); location.replace('./')</script>";
 }
 ?>
   <header class="masthead">
             <div class="container h-100">
                 <div class="row h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-10 align-self-center mb-4 page-title">
-                    	<h1 class="text-white">Checkout</h1>
+                    	<h1 class="text-white">Захиалга баталгаажуулэх</h1>
                         <hr class="divider my-4 bg-dark" />
                     </div>
                     
@@ -21,7 +21,7 @@ if($chk <= 0){
         <div class="card">
             <div class="card-body">
                 <form action="" id="checkout-frm">
-                    <h4>Хүргэлтийн хаяг баталгаажуулэх</h4>
+                    <h4>Хүргэлтийн хаяг баталгаажуулах</h4>
                     <div class="form-group">
                         <label for="" class="control-label">Нэр</label>
                         <input type="text" name="first_name" required="" class="form-control" value="<?php echo $_SESSION['login_first_name'] ?>">

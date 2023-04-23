@@ -52,7 +52,7 @@ foreach ($query as $key => $value) {
           if ($categories->num_rows > 0) :
           ?>
             <li class="nav-item position-relative " id="cat-menu-link">
-              <a class="nav-link" href="#">Ангилал</a>
+              <a class="nav-link" href="#">Бараа</a>
               <div id="category-menu" class="">
                 <ul>
                   <?php
@@ -88,7 +88,7 @@ foreach ($query as $key => $value) {
     <div class="modal-dialog modal-md" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Confirmation</h5>
+          <h5 class="modal-title">Баталгаажуулах цонх</h5>
         </div>
         <div class="modal-body">
           <div id="delete_content"></div>

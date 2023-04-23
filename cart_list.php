@@ -148,7 +148,7 @@
 			if('<?php echo isset($_SESSION['login_user_id']) ?>' == 1){
 				location.replace("index.php?page=checkout")
 			}else{
-				uni_modal("Checkout","login.php?page=checkout")
+				uni_modal("Нэвтрэх","login.php?page=checkout")
 			}
 		})
     </script>

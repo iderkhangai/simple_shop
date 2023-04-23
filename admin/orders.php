@@ -2,6 +2,7 @@
 	<div class="card">
 		<div class="card-body">
 			<div class="table-responsive">
+				<h2>Нийт Захиалга</h2>
 				<table class="table table-bordered">
 					<thead>
 						<tr>
@@ -12,7 +13,7 @@
 							<th>Email хаяг</th>
 							<th>Утасны дугаар</th>
 							<th>Төлөв</th>
-							<th></th>
+							<th>Actions</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -31,7 +32,7 @@
 								<?php if ($row['status'] == 1) : ?>
 									<td class="text-center"><span class="badge badge-success">Баталгаажсан</span></td>
 								<?php else : ?>
-									<td class="text-center"><span class="badge badge-secondary">Шинэ захиалга</span></td>
+									<td class="text-center"><span class="badge badge-danger">Шинэ захиалга</span></td>
 								<?php endif; ?>
 								<td>
 									<button class="btn btn-sm btn-primary view_order" data-id="<?php echo $row['id'] ?>">Дэлгэрэнгүй</button>
@@ -47,7 +48,7 @@
 </div>
 <script>
 	$('.view_order').click(function() {
-		uni_modal('Order', 'view_order.php?id=' + $(this).attr('data-id'))
+		uni_modal('Захиалга дэлгэрэнгүй', 'view_order.php?id=' + $(this).attr('data-id'))
 	})
 	$('table').dataTable();
 </script>
